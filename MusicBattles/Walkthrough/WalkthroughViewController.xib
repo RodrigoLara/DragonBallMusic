@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WalkthroughViewController" customModule="MusicBattles" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="Pfg-Nj-gCf" id="n0e-3Q-KRk"/>
+                <outlet property="pageControl" destination="R9u-JV-J2r" id="KUA-pr-rHL"/>
+                <outlet property="scrollView" destination="JKf-ni-LkR" id="oDt-RB-XRk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="VuR-lF-iGY">
+                    <rect key="frame" x="0.0" y="367" width="375" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="Nai-SK-EHD"/>
+                    </constraints>
+                </imageView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="R9u-JV-J2r">
+                    <rect key="frame" x="152" y="580" width="71" height="37"/>
+                    <color key="pageIndicatorTintColor" red="0.72549019609999998" green="0.72549019609999998" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="1" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </pageControl>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKf-ni-LkR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="cIS-8s-0J6"/>
+                    </connections>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfg-Nj-gCf">
+                    <rect key="frame" x="255" y="617" width="100" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Dr5-qV-pkS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="Omitir">
+                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="closeAction:" destination="-1" eventType="touchUpInside" id="UPH-ks-0zC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="JKf-ni-LkR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5hH-Gu-zQg"/>
+                <constraint firstItem="JKf-ni-LkR" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="76T-w2-9ny"/>
+                <constraint firstAttribute="bottom" secondItem="Pfg-Nj-gCf" secondAttribute="bottom" constant="20" id="8bC-AD-hkJ"/>
+                <constraint firstItem="VuR-lF-iGY" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="OMQ-io-xXr"/>
+                <constraint firstItem="R9u-JV-J2r" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aPX-li-ZIV"/>
+                <constraint firstItem="VuR-lF-iGY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="btb-5k-qiX"/>
+                <constraint firstItem="JKf-ni-LkR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dYo-Ft-Pfw"/>
+                <constraint firstAttribute="bottom" secondItem="R9u-JV-J2r" secondAttribute="bottom" constant="50" id="eHD-oV-ahU"/>
+                <constraint firstItem="VuR-lF-iGY" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="eRG-nJ-06a"/>
+                <constraint firstAttribute="trailing" secondItem="Pfg-Nj-gCf" secondAttribute="trailing" constant="20" id="iB8-ZL-N7N"/>
+                <constraint firstItem="JKf-ni-LkR" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="mKu-yv-aPB"/>
+            </constraints>
+            <point key="canvasLocation" x="-1375.2" y="-6.746626686656672"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Background" width="255.5" height="144"/>
+    </resources>
+</document>

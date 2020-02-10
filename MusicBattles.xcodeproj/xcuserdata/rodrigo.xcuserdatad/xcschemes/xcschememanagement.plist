@@ -7,7 +7,25 @@
 		<key>MusicBattles.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>5BA5434C23EF493A0063080A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5BA5436223EF493F0063080A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5BA5436D23EF493F0063080A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

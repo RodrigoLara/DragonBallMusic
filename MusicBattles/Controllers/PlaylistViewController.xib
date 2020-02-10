@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlaylistViewController" customModule="MusicBattles" customModuleProvider="target">
+            <connections>
+                <outlet property="playlistTableView" destination="dCN-cE-cTC" id="l0d-W2-zbS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DragonBallPlaylist" translatesAutoresizingMaskIntoConstraints="NO" id="3UD-Ee-WjX">
+                    <rect key="frame" x="0.0" y="44" width="414" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="2td-cN-ZpW"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dCN-cE-cTC">
+                    <rect key="frame" x="0.0" y="294" width="414" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="JcV-hE-71b"/>
+                        <outlet property="delegate" destination="-1" id="q4x-8I-xy1"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="dCN-cE-cTC" firstAttribute="top" secondItem="3UD-Ee-WjX" secondAttribute="bottom" id="KMh-Bb-ipR"/>
+                <constraint firstItem="3UD-Ee-WjX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NDJ-19-DTJ"/>
+                <constraint firstItem="3UD-Ee-WjX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Y18-9Y-Vpt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dCN-cE-cTC" secondAttribute="bottom" id="rlm-yH-e9Q"/>
+                <constraint firstItem="3UD-Ee-WjX" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="uGa-Kt-7US"/>
+                <constraint firstItem="dCN-cE-cTC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xnF-Ym-T7B"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dCN-cE-cTC" secondAttribute="trailing" id="yzN-Vb-SxC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="173.91304347826087" y="102.45535714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="DragonBallPlaylist" width="1080" height="918"/>
+    </resources>
+</document>

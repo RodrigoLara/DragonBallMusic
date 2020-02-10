@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "serie-completa-dragon-ball-z-fullhd-esp-lat-jap-sub-D_NQ_NP_933073-MLM31702285004_082019-F.jpg",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "serie-completa-dragon-ball-z-fullhd-esp-lat-jap-sub-D_NQ_NP_933073-MLM31702285004_082019-F-1.jpg",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "serie-completa-dragon-ball-z-fullhd-esp-lat-jap-sub-D_NQ_NP_933073-MLM31702285004_082019-F-2.jpg",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
